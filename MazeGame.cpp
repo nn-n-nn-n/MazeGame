@@ -241,7 +241,7 @@ void MovePlayer(int dx, int dy, int& hx, int& hy)
             hy += dy;
             hx += dx;
             ShowPlayer();
-            UpdateClock(timeLimit += 10, tstart, gameState, gameTime);
+            timeLimit += 10;
             break;
         case 7:
             HidePlayer();
@@ -255,7 +255,7 @@ void MovePlayer(int dx, int dy, int& hx, int& hy)
             hy += dy;
             hx += dx;
             ShowPlayer();
-            UpdateClock(timeLimit -= 8, tstart, gameState, gameTime);
+            timeLimit -= 8;
             break;
         }
     }
